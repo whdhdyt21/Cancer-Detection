@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_analyze">
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.dicoding.asclepius.view.history.HistoryFragment"
+        android:label="@string/history_title"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_analyze"
+        android:name="com.dicoding.asclepius.view.analyze.AnalyzeFragment"
+        android:label="@string/analyze_title"
+        tools:layout="@layout/fragment_analyze" />
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.dicoding.asclepius.view.news.NewsFragment"
+        android:label="@string/news_title"
+        tools:layout="@layout/fragment_news" />
+</navigation>
